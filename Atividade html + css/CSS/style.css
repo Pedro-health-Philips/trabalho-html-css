@@ -1,0 +1,91 @@
+.body{
+    background-color: #f4f6f8;
+    color: #003087;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.principal .foto {
+    width: 600px;
+    height: 400px;
+    border-radius: 10%;
+    box-shadow: 0 4px 20px rgba(0, 48, 135, 0.15);
+    margin-bottom: 20px;
+}
+
+.principal .nome {
+    font-size: 2.5rem;
+    color: #003087;
+    margin-bottom: 10px;
+}
+
+.principal .i {
+    font-size: 2.5rem;
+    color: #003087;
+    margin-bottom: 10px;
+}
+
+.bio {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 48, 135, 0.05);
+    margin-bottom: 40px;
+    text-align: center;
+}
+.hobbies, .social {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 48, 135, 0.05);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.hobbies h2, .social h2 {
+    color: #003087;
+    margin-bottom: 15px;
+}
+
+.hobbies ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.hobbies ul li {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.social a img {
+    width: 50px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.social a img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 48, 135, 0.3);
+}
+
+a {
+    text-decoration: none;
+}
+.socail .Instagram {
+    border-bottom: 20px;
+}
+
+.myPerson {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 48, 135, 0.15);
+    padding: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
