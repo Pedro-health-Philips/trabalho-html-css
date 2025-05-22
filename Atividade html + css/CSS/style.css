@@ -1,6 +1,6 @@
-.body{
-    background-color: #f4f6f8;
-    color: #003087;
+.body {
+    background-color: #9dcbfa;
+    color: #3b69be;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -12,9 +12,9 @@
 }
 
 .principal .foto {
-    width: 600px;
-    height: 400px;
-    border-radius: 10%;
+    width: 290px;
+    height: 290px;
+    border-radius: 230%;
     box-shadow: 0 4px 20px rgba(0, 48, 135, 0.15);
     margin-bottom: 20px;
 }
@@ -39,16 +39,22 @@
     margin-bottom: 40px;
     text-align: center;
 }
-.hobbies, .social {
+
+.hobbies,
+.social {
     background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 48, 135, 0.05);
-    margin-bottom: 40px;
     text-align: center;
 }
 
-.hobbies h2, .social h2 {
+.hobbies{
+    margin-bottom: 40px;
+}
+
+.hobbies h2,
+.social h2 {
     color: #003087;
     margin-bottom: 15px;
 }
@@ -59,7 +65,7 @@
 }
 
 .hobbies ul li {
-    margin-bottom: 10px;
+    margin-bottom: 1px;
     color: #333;
 }
 
@@ -77,6 +83,7 @@
 a {
     text-decoration: none;
 }
+
 .socail .Instagram {
     border-bottom: 20px;
 }
@@ -88,4 +95,237 @@ a {
     padding: 40px;
     margin-bottom: 40px;
     text-align: center;
+}
+
+.container form {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.container form input, .container form textarea {
+    border-radius: 5px;
+    border: 2px solid #003366;
+    width: 95%;
+    padding: 3px;
+
+}
+
+.container form input::placeholder{
+    text-align: center;
+}
+
+.container form textarea::placeholder{
+    text-align: center;
+}
+
+
+.container button{
+    margin-top: 4px;
+    padding: 3px;
+    border-radius: 5px;
+
+}
+
+ .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0,0,0,0.5);
+      display: none;
+      z-index: 999;
+    }
+
+   .prompt {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      display: none;
+      z-index: 1000;
+      width: 31%;
+      text-align: center;
+      animation: fadeIn 0.3s ease;
+    }
+
+    .prompt h2 {
+      color: #003366;
+      margin-bottom: 20px;
+    }
+
+    .prompt input {
+      width: 90%;
+      padding: 5px;
+      border: 2px solid #003366;
+      border-radius: 7.5px;
+      outline: none;
+      font-size: 16px;
+      margin-bottom: 20px;
+      transition: 0.3s;
+    }
+
+    .prompt input:focus {
+      border-color: #0055aa;
+      box-shadow: 0 0 8px #0055aa33;
+    }
+
+    .prompt button {
+      background-color: #003366;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .prompt button:hover {
+      background-color: #0055aa;
+    }
+
+    .myPerson {
+      margin-top: 40px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .myPerson img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .myPerson p {
+      color: #003366;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+      }
+      to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+/* Geral modo escuro */
+.dark-mode.body {
+    background-color: #050404;
+    color: #ffffff;
+}
+
+/* Containers */
+.dark-mode .bio,
+.dark-mode .hobbies,
+.dark-mode .social,
+.dark-mode .container,
+.dark-mode .myPerson,
+.dark-mode .prompt {
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+}
+
+/* Textos */
+.dark-mode p,
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6,
+.dark-mode label,
+.dark-mode li,
+.dark-mode span {
+    color: #ffffff;
+}
+
+/* Títulos que eram azuis ficam vermelhos */
+.dark-mode .principal .nome,
+.dark-mode .principal .i,
+.dark-mode .hobbies h2,
+.dark-mode .social h2,
+.dark-mode .prompt h2,
+.dark-mode .myPerson p {
+    color: #ff0000;
+}
+
+/* Inputs e textarea */
+.dark-mode .container form input,
+.dark-mode .container form textarea,
+.dark-mode .prompt input {
+    background-color: #121212;
+    color: #ffffff;
+    border-color: #444;
+}
+
+/* Placeholder dos inputs no modo escuro */
+.dark-mode input::placeholder,
+.dark-mode textarea::placeholder {
+    color: #ffffff;
+}
+
+/* Botões */
+.dark-mode .container button,
+.dark-mode .prompt button {
+    background-color: #333;
+    color: #ffffff;
+    border: none;
+}
+
+/* Hover nas redes sociais */
+.dark-mode .social a img:hover {
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Foto */
+.dark-mode .myPerson img {
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Botão modo escuro */
+.meuBotao button {
+    float: right;
+    border-radius: 5px;
+}
+
+.meuBotao button {
+    float: right;
+    border-radius: 5px;
+}
+
+.meuBotao{
+    display: flex;
+}
+
+.dark-mode .hobbies ul li {
+    color: #ffffff;
 }
